@@ -35,9 +35,9 @@ ButtonStyle buttonStyleOther(Color color, Color? textColor) {
     alignment: Alignment.center,
     backgroundColor: color,
     foregroundColor: textColor != null ? textColor : Colors.black54,
-    disabledBackgroundColor: color.withOpacity(0.45),
+    disabledBackgroundColor: color.withValues(alpha: 0.45),
     disabledForegroundColor:
-        textColor != null ? textColor.withOpacity(0.38) : Colors.black38,
+        textColor != null ? textColor.withValues(alpha: 0.38) : Colors.black38,
     side: BorderSide(color: Color(0xFFedede9)),
     shape: RoundedRectangleBorder(borderRadius: _borderRadiusBtn),
   );
@@ -48,9 +48,9 @@ ButtonStyle buttonStyleIcon(Color color) {
     alignment: Alignment.center,
     backgroundColor: color,
     foregroundColor: Colors.black54,
-    disabledBackgroundColor: color.withOpacity(0.45),
+    disabledBackgroundColor: color.withValues(alpha: 0.45),
     disabledForegroundColor: Colors.black38,
-    side: BorderSide(color: color.withOpacity(0.95)),
+    side: BorderSide(color: color.withValues(alpha: 0.95)),
     shape: RoundedRectangleBorder(borderRadius: _borderRadiusBtn),
   );
 }
